@@ -1,3 +1,3 @@
 export const environment = {
-    "title": 'Este es mi mf shell',
+	title: 'Este es mi mf shell'
 };
