@@ -1,0 +1,9 @@
+{
+	"mfAuthentication": {
+		"remoteEntry": "http://localhost:4201/remoteEntry.js",
+		"exposedModule": "./AuthModule",
+		"routePath": "auth",
+		"ngModuleName": "AuthModule",
+		"isStandalone": false
+	}
+}

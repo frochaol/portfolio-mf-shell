@@ -1,0 +1,9 @@
+{
+	"mfAuthentication": {
+		"remoteEntry": "https://portfolio-mf-auth.vercel.app/remoteEntry.js",
+		"exposedModule": "./AuthModule",
+		"routePath": "auth",
+		"ngModuleName": "AuthModule",
+		"isStandalone": false
+	}
+}

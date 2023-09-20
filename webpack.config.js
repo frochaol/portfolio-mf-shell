@@ -1,13 +1,10 @@
 const { shareAll, withModuleFederationPlugin } = require('@angular-architects/module-federation/webpack');
 
-const moduleFederationConfig = withModuleFederationPlugin({
-	remotes: {
-		mfAuthentication: 'http://localhost:4201/remoteEntry.js'
-	},
+module.exports = withModuleFederationPlugin({
+	name: 'mf-shell',
+	remotes: {},
 
 	shared: {
 		...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' })
 	}
 });
-moduleFederationConfig.output.publicPath = 'http://localhost:4200';
-module.exports = moduleFederationConfig;
