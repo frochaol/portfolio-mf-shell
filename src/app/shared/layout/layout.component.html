@@ -1,3 +1,24 @@
-<h1>Header</h1>
-<router-outlet></router-outlet>
-<h1>Footer</h1>
+<header>
+	<nav class="navbar">
+		<label class="navbar_logo"><a href="#">Fernando Rocha</a></label>
+		<ul class="navbar-items">
+			<li><a href="#">Presentación</a></li>
+		</ul>
+		<a class="navbar-action" routerLink="/auth/login">Login</a>
+		<a class="navbar-toggle">
+			<span class="navbar-toggle_icon"></span>
+		</a>
+	</nav>
+
+	<div class="navbar-dropdown">
+		<li><a routerLink="#">Presentación</a></li>
+		<li><a class="navbar-action">Login</a></li>
+	</div>
+</header>
+
+<main>
+	<router-outlet></router-outlet>
+</main>
+<footer style="background-color: #003c4c; height: 60px">
+	<h1>Footer</h1>
+</footer>
