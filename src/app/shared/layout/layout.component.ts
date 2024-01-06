@@ -9,17 +9,4 @@ import { RouterModule } from '@angular/router';
 	templateUrl: './layout.component.html',
 	styleUrls: ['./layout.component.scss']
 })
-export class LayoutComponent {
-	public openMenu() {
-		const logo = document.querySelector('#nav-logo');
-		const menuItems = document.querySelector('#menu');
-		const menuButtonSpans = document.querySelectorAll('#menu-button span');
-
-		menuItems?.classList.toggle('hidden');
-		logo?.classList.toggle('hidden');
-
-		menuButtonSpans.forEach((span) => {
-			span.classList.toggle('animado');
-		});
-	}
-}
+export class LayoutComponent {}
